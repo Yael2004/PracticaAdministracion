@@ -1,0 +1,95 @@
+﻿<Window x:Class="SGC.Vista.RegistrarConstanciaEE"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Registrar Constancia de Experiencias Educativas" Height="600" Width="700">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Elementos/Estilos.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <!-- Fondo -->
+        <Grid.Background>
+            <SolidColorBrush Color="#F9F9F9"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Registrar Constancia de Experiencias Educativas"
+                   FontSize="22" FontWeight="Bold"
+                   Foreground="{StaticResource UVPrimaryColor}"
+                   Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <Grid Grid.Row="1" Margin="0,10,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Número de Personal:" Grid.Column="0" VerticalAlignment="Center" Style="{StaticResource TextBlockStyle}" />
+            <TextBox x:Name="NumeroPersonalTextBox" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="0,10,0,10">
+            <StackPanel x:Name="BotonesBuscarPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="BuscarButton" Content="Buscar" Style="{StaticResource RoundedButtonStyle}" Width="120" Height="40" Margin="10" Click="BuscarButton_Click"/>
+                <Button x:Name="CancelarButton" Content="Cancelar" Style="{StaticResource RoundedButtonStyle}" Background="{StaticResource UVErrorColor}" Width="120" Height="40" Margin="10" Click="CancelarButton_Click"/>
+            </StackPanel>
+
+            <StackPanel x:Name="BotonesDespuesBuscarPanel" Orientation="Horizontal" HorizontalAlignment="Center" Visibility="Collapsed">
+                <Button x:Name="RegistrarEEButton" Content="Registrar" Style="{StaticResource RoundedButtonStyle}" Width="120" Height="40" Margin="10" Click="RegistrarEEButton_Click"/>
+                <Button x:Name="CancelarDespuesBuscarButton" Content="Cancelar" Style="{StaticResource RoundedButtonStyle}" Background="{StaticResource UVErrorColor}" Width="120" Height="40" Margin="10" Click="CancelarButton_Click"/>
+            </StackPanel>
+        </Grid>
+
+
+        <Border Grid.Row="3" CornerRadius="10" BorderBrush="{StaticResource UVPrimaryColor}" BorderThickness="2" Padding="20" Margin="0,20,0,0" Visibility="Collapsed" x:Name="CamposEEPanel">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Programa Educativo:" Grid.Row="0" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="ProgramaEducativoComboBox" Grid.Row="0" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+
+                <TextBlock Text="Nombre EE:" Grid.Row="1" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="NombreEETextBox" Grid.Row="1" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+
+                <TextBlock Text="Bloque:" Grid.Row="2" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="BloqueTextBox" Grid.Row="2" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+
+                <TextBlock Text="Sección:" Grid.Row="3" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="SeccionTextBox" Grid.Row="3" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+
+                <TextBlock Text="Créditos EE:" Grid.Row="4" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="CreditosEETextBox" Grid.Row="4" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+
+                <TextBlock Text="HSM:" Grid.Row="5" Grid.Column="0" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+                <TextBox x:Name="HSMTextBox" Grid.Row="5" Grid.Column="1" Style="{StaticResource RoundedTextBoxStyle}" Margin="10,0"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

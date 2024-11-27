@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaGeneracionConstanciasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Docente">
+    <Key>
+      <PropertyRef Name="DocenteID" />
+    </Key>
+    <Property Name="DocenteID" Type="Int32" Nullable="false" />
+    <Property Name="Contratacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Docente_Usuario" FromRole="Docente" ToRole="Usuario" />
+    <NavigationProperty Name="DocenteExperienciaEducativa" Relationship="Self.FK_DocenteExperienciaEducativa_Docente" FromRole="Docente" ToRole="DocenteExperienciaEducativa" />
+  </EntityType>
+  <EntityType Name="DocenteExperienciaEducativa">
+    <Key>
+      <PropertyRef Name="DocenteID" />
+      <PropertyRef Name="ExperienciaEducativaID" />
+    </Key>
+    <Property Name="DocenteID" Type="Int32" Nullable="false" />
+    <Property Name="ExperienciaEducativaID" Type="Int32" Nullable="false" />
+    <Property Name="Periodo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Docente" Relationship="Self.FK_DocenteExperienciaEducativa_Docente" FromRole="DocenteExperienciaEducativa" ToRole="Docente" />
+    <NavigationProperty Name="ExperienciaEducativa" Relationship="Self.FK_DocenteExperienciaEducativa_ExperienciaEducativa" FromRole="DocenteExperienciaEducativa" ToRole="ExperienciaEducativa" />
+  </EntityType>
+  <EntityType Name="ExperienciaEducativa">
+    <Key>
+      <PropertyRef Name="ExperienciaEducativaID" />
+    </Key>
+    <Property Name="ExperienciaEducativaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramaEducativoID" Type="Int32" Nullable="false" />
+    <Property Name="Bloque" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Seccion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="CreditosEe" Type="Int32" />
+    <Property Name="HSM" Type="Int32" />
+    <Property Name="NombreEE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DocenteExperienciaEducativa" Relationship="Self.FK_DocenteExperienciaEducativa_ExperienciaEducativa" FromRole="ExperienciaEducativa" ToRole="DocenteExperienciaEducativa" />
+    <NavigationProperty Name="ProgramaEducativo" Relationship="Self.FK_ExperienciaEducativa_ProgramaEducativo" FromRole="ExperienciaEducativa" ToRole="ProgramaEducativo" />
+  </EntityType>
+  <EntityType Name="PersonalAdministrativo">
+    <Key>
+      <PropertyRef Name="PersonalAdministrativoID" />
+    </Key>
+    <Property Name="PersonalAdministrativoID" Type="Int32" Nullable="false" />
+    <Property Name="RFC" Type="String" MaxLength="13" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_PersonalAdministrativo_Usuario" FromRole="PersonalAdministrativo" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="ProgramaEducativo">
+    <Key>
+      <PropertyRef Name="ProgramaEducativoID" />
+    </Key>
+    <Property Name="ProgramaEducativoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ExperienciaEducativa" Relationship="Self.FK_ExperienciaEducativa_ProgramaEducativo" FromRole="ProgramaEducativo" ToRole="ExperienciaEducativa" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sede" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumeroPersonal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Docente" Relationship="Self.FK_Docente_Usuario" FromRole="Usuario" ToRole="Docente" />
+    <NavigationProperty Name="PersonalAdministrativo" Relationship="Self.FK_PersonalAdministrativo_Usuario" FromRole="Usuario" ToRole="PersonalAdministrativo" />
+  </EntityType>
+  <Association Name="FK_Docente_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Docente" Type="Self.Docente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="Docente">
+        <PropertyRef Name="DocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteExperienciaEducativa_Docente">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="DocenteExperienciaEducativa" Type="Self.DocenteExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="DocenteID" />
+      </Principal>
+      <Dependent Role="DocenteExperienciaEducativa">
+        <PropertyRef Name="DocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteExperienciaEducativa_ExperienciaEducativa">
+    <End Role="ExperienciaEducativa" Type="Self.ExperienciaEducativa" Multiplicity="1" />
+    <End Role="DocenteExperienciaEducativa" Type="Self.DocenteExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExperienciaEducativa">
+        <PropertyRef Name="ExperienciaEducativaID" />
+      </Principal>
+      <Dependent Role="DocenteExperienciaEducativa">
+        <PropertyRef Name="ExperienciaEducativaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExperienciaEducativa_ProgramaEducativo">
+    <End Role="ProgramaEducativo" Type="Self.ProgramaEducativo" Multiplicity="1" />
+    <End Role="ExperienciaEducativa" Type="Self.ExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramaEducativo">
+        <PropertyRef Name="ProgramaEducativoID" />
+      </Principal>
+      <Dependent Role="ExperienciaEducativa">
+        <PropertyRef Name="ProgramaEducativoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalAdministrativo_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="PersonalAdministrativo" Type="Self.PersonalAdministrativo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="PersonalAdministrativo">
+        <PropertyRef Name="PersonalAdministrativoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaGeneracionConstanciasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Docente" EntityType="Self.Docente" />
+    <EntitySet Name="DocenteExperienciaEducativa" EntityType="Self.DocenteExperienciaEducativa" />
+    <EntitySet Name="ExperienciaEducativa" EntityType="Self.ExperienciaEducativa" />
+    <EntitySet Name="PersonalAdministrativo" EntityType="Self.PersonalAdministrativo" />
+    <EntitySet Name="ProgramaEducativo" EntityType="Self.ProgramaEducativo" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_Docente_Usuario" Association="Self.FK_Docente_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Docente" EntitySet="Docente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteExperienciaEducativa_Docente" Association="Self.FK_DocenteExperienciaEducativa_Docente">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="DocenteExperienciaEducativa" EntitySet="DocenteExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteExperienciaEducativa_ExperienciaEducativa" Association="Self.FK_DocenteExperienciaEducativa_ExperienciaEducativa">
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativa" />
+      <End Role="DocenteExperienciaEducativa" EntitySet="DocenteExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExperienciaEducativa_ProgramaEducativo" Association="Self.FK_ExperienciaEducativa_ProgramaEducativo">
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativo" />
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalAdministrativo_Usuario" Association="Self.FK_PersonalAdministrativo_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PersonalAdministrativo" EntitySet="PersonalAdministrativo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

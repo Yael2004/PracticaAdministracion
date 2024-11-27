@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemaGeneracionConstanciasModelStoreContainer" CdmEntityContainer="SistemaGeneracionConstanciasEntities">
+    <EntitySetMapping Name="Docente">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.Docente">
+        <MappingFragment StoreEntitySet="Docente">
+          <ScalarProperty Name="DocenteID" ColumnName="DocenteID" />
+          <ScalarProperty Name="Contratacion" ColumnName="Contratacion" />
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocenteExperienciaEducativa">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.DocenteExperienciaEducativa">
+        <MappingFragment StoreEntitySet="DocenteExperienciaEducativa">
+          <ScalarProperty Name="DocenteID" ColumnName="DocenteID" />
+          <ScalarProperty Name="ExperienciaEducativaID" ColumnName="ExperienciaEducativaID" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExperienciaEducativa">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.ExperienciaEducativa">
+        <MappingFragment StoreEntitySet="ExperienciaEducativa">
+          <ScalarProperty Name="ExperienciaEducativaID" ColumnName="ExperienciaEducativaID" />
+          <ScalarProperty Name="ProgramaEducativoID" ColumnName="ProgramaEducativoID" />
+          <ScalarProperty Name="Bloque" ColumnName="Bloque" />
+          <ScalarProperty Name="Seccion" ColumnName="Seccion" />
+          <ScalarProperty Name="CreditosEe" ColumnName="CreditosEe" />
+          <ScalarProperty Name="HSM" ColumnName="HSM" />
+          <ScalarProperty Name="NombreEE" ColumnName="NombreEE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonalAdministrativo">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.PersonalAdministrativo">
+        <MappingFragment StoreEntitySet="PersonalAdministrativo">
+          <ScalarProperty Name="PersonalAdministrativoID" ColumnName="PersonalAdministrativoID" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProgramaEducativo">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.ProgramaEducativo">
+        <MappingFragment StoreEntitySet="ProgramaEducativo">
+          <ScalarProperty Name="ProgramaEducativoID" ColumnName="ProgramaEducativoID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="SistemaGeneracionConstanciasModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Sede" ColumnName="Sede" />
+          <ScalarProperty Name="NumeroPersonal" ColumnName="NumeroPersonal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

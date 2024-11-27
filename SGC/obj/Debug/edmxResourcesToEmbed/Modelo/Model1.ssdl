@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaGeneracionConstanciasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Docente">
+    <Key>
+      <PropertyRef Name="DocenteID" />
+    </Key>
+    <Property Name="DocenteID" Type="int" Nullable="false" />
+    <Property Name="Contratacion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Categoria" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DocenteExperienciaEducativa">
+    <Key>
+      <PropertyRef Name="DocenteID" />
+      <PropertyRef Name="ExperienciaEducativaID" />
+    </Key>
+    <Property Name="DocenteID" Type="int" Nullable="false" />
+    <Property Name="ExperienciaEducativaID" Type="int" Nullable="false" />
+    <Property Name="Periodo" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="ExperienciaEducativa">
+    <Key>
+      <PropertyRef Name="ExperienciaEducativaID" />
+    </Key>
+    <Property Name="ExperienciaEducativaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProgramaEducativoID" Type="int" Nullable="false" />
+    <Property Name="Bloque" Type="nvarchar" MaxLength="10" />
+    <Property Name="Seccion" Type="nvarchar" MaxLength="10" />
+    <Property Name="CreditosEe" Type="int" />
+    <Property Name="HSM" Type="int" />
+    <Property Name="NombreEE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PersonalAdministrativo">
+    <Key>
+      <PropertyRef Name="PersonalAdministrativoID" />
+    </Key>
+    <Property Name="PersonalAdministrativoID" Type="int" Nullable="false" />
+    <Property Name="RFC" Type="nvarchar" MaxLength="13" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProgramaEducativo">
+    <Key>
+      <PropertyRef Name="ProgramaEducativoID" />
+    </Key>
+    <Property Name="ProgramaEducativoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Correo" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NombreUsuario" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contraseña" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Sede" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NumeroPersonal" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Docente_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Docente" Type="Self.Docente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="Docente">
+        <PropertyRef Name="DocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteExperienciaEducativa_Docente">
+    <End Role="Docente" Type="Self.Docente" Multiplicity="1" />
+    <End Role="DocenteExperienciaEducativa" Type="Self.DocenteExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docente">
+        <PropertyRef Name="DocenteID" />
+      </Principal>
+      <Dependent Role="DocenteExperienciaEducativa">
+        <PropertyRef Name="DocenteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DocenteExperienciaEducativa_ExperienciaEducativa">
+    <End Role="ExperienciaEducativa" Type="Self.ExperienciaEducativa" Multiplicity="1" />
+    <End Role="DocenteExperienciaEducativa" Type="Self.DocenteExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExperienciaEducativa">
+        <PropertyRef Name="ExperienciaEducativaID" />
+      </Principal>
+      <Dependent Role="DocenteExperienciaEducativa">
+        <PropertyRef Name="ExperienciaEducativaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExperienciaEducativa_ProgramaEducativo">
+    <End Role="ProgramaEducativo" Type="Self.ProgramaEducativo" Multiplicity="1" />
+    <End Role="ExperienciaEducativa" Type="Self.ExperienciaEducativa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProgramaEducativo">
+        <PropertyRef Name="ProgramaEducativoID" />
+      </Principal>
+      <Dependent Role="ExperienciaEducativa">
+        <PropertyRef Name="ProgramaEducativoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalAdministrativo_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="PersonalAdministrativo" Type="Self.PersonalAdministrativo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="UsuarioID" />
+      </Principal>
+      <Dependent Role="PersonalAdministrativo">
+        <PropertyRef Name="PersonalAdministrativoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemaGeneracionConstanciasModelStoreContainer">
+    <EntitySet Name="Docente" EntityType="Self.Docente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocenteExperienciaEducativa" EntityType="Self.DocenteExperienciaEducativa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExperienciaEducativa" EntityType="Self.ExperienciaEducativa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PersonalAdministrativo" EntityType="Self.PersonalAdministrativo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProgramaEducativo" EntityType="Self.ProgramaEducativo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Docente_Usuario" Association="Self.FK_Docente_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Docente" EntitySet="Docente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteExperienciaEducativa_Docente" Association="Self.FK_DocenteExperienciaEducativa_Docente">
+      <End Role="Docente" EntitySet="Docente" />
+      <End Role="DocenteExperienciaEducativa" EntitySet="DocenteExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DocenteExperienciaEducativa_ExperienciaEducativa" Association="Self.FK_DocenteExperienciaEducativa_ExperienciaEducativa">
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativa" />
+      <End Role="DocenteExperienciaEducativa" EntitySet="DocenteExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExperienciaEducativa_ProgramaEducativo" Association="Self.FK_ExperienciaEducativa_ProgramaEducativo">
+      <End Role="ProgramaEducativo" EntitySet="ProgramaEducativo" />
+      <End Role="ExperienciaEducativa" EntitySet="ExperienciaEducativa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalAdministrativo_Usuario" Association="Self.FK_PersonalAdministrativo_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="PersonalAdministrativo" EntitySet="PersonalAdministrativo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

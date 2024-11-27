@@ -1,0 +1,91 @@
+﻿<Window x:Class="SGC.Vista.RegistroDocente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Registrar Docente" Height="700" Width="850">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Elementos/Estilos.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Registrar Docente" 
+                   FontSize="30" FontWeight="Bold" 
+                   Foreground="{StaticResource UVPrimaryColor}" 
+                   Grid.Row="0" Grid.ColumnSpan="2" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
+            <TextBlock Text="Nombre:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="NombreTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorNombreTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Número de Personal:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="NumeroPersonalTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorNumeroPersonalTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Correo:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="CorreoTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorCorreoTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Contratación:" Style="{StaticResource TextBlockStyle}"/>
+            <ComboBox x:Name="ContratacionComboBox">
+                <ComboBoxItem Content="Planta"/>
+                <ComboBoxItem Content="Interino por plaza"/>
+                <ComboBoxItem Content="Interino por persona"/>
+                <ComboBoxItem Content="Interino por tiempo determinadoo"/>
+                <ComboBoxItem Content="Suplente o sustituto"/>
+            </ComboBox>
+            <TextBlock x:Name="ErrorContratacionTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
+            <TextBlock Text="Apellidos:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="ApellidosTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorApellidosTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Nombre de Usuario:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="NombreUsuarioTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorNombreUsuarioTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Contraseña:" Style="{StaticResource TextBlockStyle}"/>
+            <PasswordBox x:Name="ContrasenaPasswordBox" Style="{StaticResource RoundedPasswordBoxStyle}"/>
+            <TextBlock x:Name="ErrorContrasenaTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Categoría:" Style="{StaticResource TextBlockStyle}"/>
+            <ComboBox x:Name="CategoriaComboBox">
+                <ComboBoxItem Content="Rector"/>
+                <ComboBoxItem Content="Coordinador de laboratorio"/>
+                <ComboBoxItem Content="Jefe de carrera"/>
+                <ComboBoxItem Content="Auxiliar técnico"/>
+                <ComboBoxItem Content="Eventual"/>
+            </ComboBox>
+            <TextBlock x:Name="ErrorCategoriaTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+
+            <TextBlock Text="Sede:" Style="{StaticResource TextBlockStyle}"/>
+            <TextBox x:Name="SedeTextBox" Style="{StaticResource RoundedTextBoxStyle}"/>
+            <TextBlock x:Name="ErrorSedeTextBlock" Foreground="Red" FontSize="12" Margin="5,0,0,10"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button x:Name="RegistrarButton" Content="Registrar" Style="{StaticResource RoundedButtonStyle}" Width="120" Margin="0,0,20,0" Click="RegistrarButton_Click"/>
+            <Button x:Name="CancelarButton" Content="Cancelar" Style="{StaticResource RoundedButtonStyle}" Background="{StaticResource UVErrorColor}" Width="120" Margin="20,0,0,0" Click="CancelarButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
