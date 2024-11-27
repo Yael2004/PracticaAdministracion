@@ -1,0 +1,308 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AED210B-EF36-4567-9194-86803E988ECB}|PruebasSGC\\PruebasSGC.csproj|c:\\users\\yaela\\desktop\\universidad\\semestres\\quinto\\administraci\u00F3n\\generacionconstancias\\sgc\\pruebassgc\\sesiondocentepruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AED210B-EF36-4567-9194-86803E988ECB}|PruebasSGC\\PruebasSGC.csproj|solutionrelative:pruebassgc\\sesiondocentepruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AED210B-EF36-4567-9194-86803E988ECB}|PruebasSGC\\PruebasSGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\pruebassgc\\validadorespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AED210B-EF36-4567-9194-86803E988ECB}|PruebasSGC\\PruebasSGC.csproj|solutionrelative:pruebassgc\\validadorespruebas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\auxiliares\\sesiondocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\auxiliares\\sesiondocente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroPersonalAdministrativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:SGC\\Vista\\RegistroPersonalAdministrativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\registropersonaladministrativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\registropersonaladministrativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\consultarconstancia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\consultarconstancia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\consultarconstancia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\consultarconstancia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\menupersonaladministrativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\menupersonaladministrativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\registrarconstanciaee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\registrarconstanciaee.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroDocente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:SGC\\Vista\\RegistroDocente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Auxiliares\\Validadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:SGC\\Auxiliares\\Validadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\menudocente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\menudocente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:SGC\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\menudocente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\menudocente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\registrarconstanciaee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\registrarconstanciaee.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\sgc\\vista\\menupersonaladministrativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:sgc\\vista\\menupersonaladministrativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Elementos\\Estilos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{984ABF32-60F6-48FA-9E4E-0B72E9844B08}|SGC\\SGC.csproj|solutionrelative:SGC\\Elementos\\Estilos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SesionDocentePruebas.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\PruebasSGC\\SesionDocentePruebas.cs",
+              "RelativeDocumentMoniker": "PruebasSGC\\SesionDocentePruebas.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\PruebasSGC\\SesionDocentePruebas.cs",
+              "RelativeToolTip": "PruebasSGC\\SesionDocentePruebas.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T03:09:22.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SesionDocente.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Auxiliares\\SesionDocente.cs",
+              "RelativeDocumentMoniker": "SGC\\Auxiliares\\SesionDocente.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Auxiliares\\SesionDocente.cs",
+              "RelativeToolTip": "SGC\\Auxiliares\\SesionDocente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T02:50:03.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidadoresPruebas.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\PruebasSGC\\ValidadoresPruebas.cs",
+              "RelativeDocumentMoniker": "PruebasSGC\\ValidadoresPruebas.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\PruebasSGC\\ValidadoresPruebas.cs",
+              "RelativeToolTip": "PruebasSGC\\ValidadoresPruebas.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAiwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T02:40:56.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuDocente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuDocente.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\MenuDocente.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuDocente.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\MenuDocente.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T20:18:29.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsultarConstancia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\ConsultarConstancia.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\ConsultarConstancia.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\ConsultarConstancia.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\ConsultarConstancia.xaml.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAiwP8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:47:54.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsultarConstancia.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\ConsultarConstancia.xaml",
+              "RelativeDocumentMoniker": "SGC\\Vista\\ConsultarConstancia.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\ConsultarConstancia.xaml",
+              "RelativeToolTip": "SGC\\Vista\\ConsultarConstancia.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T19:47:52.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuPersonalAdministrativo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuPersonalAdministrativo.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\MenuPersonalAdministrativo.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuPersonalAdministrativo.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\MenuPersonalAdministrativo.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T19:24:49.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MenuPersonalAdministrativo.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuPersonalAdministrativo.xaml",
+              "RelativeDocumentMoniker": "SGC\\Vista\\MenuPersonalAdministrativo.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuPersonalAdministrativo.xaml",
+              "RelativeToolTip": "SGC\\Vista\\MenuPersonalAdministrativo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T18:18:48.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MenuDocente.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuDocente.xaml",
+              "RelativeDocumentMoniker": "SGC\\Vista\\MenuDocente.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\MenuDocente.xaml",
+              "RelativeToolTip": "SGC\\Vista\\MenuDocente.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T18:18:45.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistroPersonalAdministrativo.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroPersonalAdministrativo.xaml",
+              "RelativeDocumentMoniker": "SGC\\Vista\\RegistroPersonalAdministrativo.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroPersonalAdministrativo.xaml",
+              "RelativeToolTip": "SGC\\Vista\\RegistroPersonalAdministrativo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-13T04:03:38.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistrarConstanciaEE.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistrarConstanciaEE.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\RegistrarConstanciaEE.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistrarConstanciaEE.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\RegistrarConstanciaEE.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwHcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T23:06:08.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegistrarConstanciaEE.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistrarConstanciaEE.xaml",
+              "RelativeDocumentMoniker": "SGC\\Vista\\RegistrarConstanciaEE.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistrarConstanciaEE.xaml",
+              "RelativeToolTip": "SGC\\Vista\\RegistrarConstanciaEE.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T23:02:03.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Estilos.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Elementos\\Estilos.xaml",
+              "RelativeDocumentMoniker": "SGC\\Elementos\\Estilos.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Elementos\\Estilos.xaml",
+              "RelativeToolTip": "SGC\\Elementos\\Estilos.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-20T15:10:27.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\MainWindow.xaml.cs",
+              "RelativeToolTip": "SGC\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAwwKoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:11:29.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegistroPersonalAdministrativo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroPersonalAdministrativo.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\RegistroPersonalAdministrativo.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroPersonalAdministrativo.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\RegistroPersonalAdministrativo.xaml.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAcwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:12:03.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegistroDocente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroDocente.xaml.cs",
+              "RelativeDocumentMoniker": "SGC\\Vista\\RegistroDocente.xaml.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Vista\\RegistroDocente.xaml.cs",
+              "RelativeToolTip": "SGC\\Vista\\RegistroDocente.xaml.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:02:09.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SGC\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\MainWindow.xaml",
+              "RelativeToolTip": "SGC\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T23:41:22.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Validadores.cs",
+              "DocumentMoniker": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Auxiliares\\Validadores.cs",
+              "RelativeDocumentMoniker": "SGC\\Auxiliares\\Validadores.cs",
+              "ToolTip": "C:\\Users\\yaela\\Desktop\\Universidad\\Semestres\\Quinto\\Administraci\u00F3n\\generacionConstancias\\SGC\\SGC\\Auxiliares\\Validadores.cs",
+              "RelativeToolTip": "SGC\\Auxiliares\\Validadores.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwEMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:02:43.176Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
